@@ -1,0 +1,35 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.grid {
+  /* đối với những màn hình có kích thước lớn hơn 1200px thì chỉ hiển thị 1200px */
+  width: 1200px;
+  /* đối với những màn hình nhỏ hơn thì sẽ hiển thị full màn hình */
+  max-width: 100%;
+  /* canh giữa khối */
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  /* nếu không muốn sử dụng 1200px thì thêm cái này */
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+}

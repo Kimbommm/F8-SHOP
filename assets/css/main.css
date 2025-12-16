@@ -1,0 +1,36 @@
+.header {
+  height: 120px;
+  background-image: linear-gradient(0, #fe6433, #f53e2d);
+}
+
+.header__navbar {
+  /* cho 2 thẻ ul lên cùng 1 dòng */
+  display: flex;
+  justify-content: space-between;
+}
+.header__navbar-list {
+  /* bỏ dấu chấm mặc định của thẻ li */
+  list-style: none;
+  padding-left: 0;
+}
+
+.header__navbar-item {
+  /* đẩy các chữ xa nhau ra */
+  margin: 0 8px;
+}
+
+.header__navbar-item,
+.header__navbar-item-link {
+  /* cho các thẻ li lên cùng 1 dòng nhưng vẫn giữ tính chất block */
+  display: inline-block;
+  font-size: 1.5rem;
+  color: var(--white-color);
+  /* bỏ đi gạch chân của thẻ a */
+  text-decoration: none;
+  /* sửa độ dày của chữ */
+  font-weight: 300;
+}
+
+.header__navbar-item--strong {
+  font-weight: 500;
+}
